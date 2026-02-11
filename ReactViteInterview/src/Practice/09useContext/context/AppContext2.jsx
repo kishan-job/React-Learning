@@ -1,3 +1,6 @@
+//// main.js
+
+// this is used in main.jsx
 import { createContext } from "react";
 
 export const Appcontext = createContext();

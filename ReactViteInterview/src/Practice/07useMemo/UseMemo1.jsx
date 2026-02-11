@@ -1,4 +1,4 @@
-// The useMemo hook in React returns a memoized value (i.e., it caches the result). This hook helps improve the performance of a React application. The memoized function is only executed when its dependencies change.
+// The useMemo hook in React returns a memoized value (i.e., it caches the result). This hook helps improve the performance of a React application. The  function passed to useMemo is only executed when its dependencies change.
 
 // What is useMemo in React?
 // useMemo is a React hook that returns a memoized (cached) value, which means:

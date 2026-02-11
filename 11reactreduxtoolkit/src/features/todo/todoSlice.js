@@ -1,6 +1,7 @@
 import { createSlice, nanoid } from "@reduxjs/toolkit";
 
 const todoSlice = createSlice({
+  //createSlice method from redux return an object. with this method we create a slice of our redux
   name: "todo",
   initialState: {
     todos: [],
@@ -23,7 +24,7 @@ const todoSlice = createSlice({
   },
 });
 
-export const { addTodo, removeTodo } = todoSlice.actions; // todoSlice is an object containing an 'actions' object. This 'actions' object holds the automatically generated action creator functions corresponding to each reducer defined in the todoSlice.
+export const { addTodo, removeTodo } = todoSlice.actions; // todoSlice is an object containing an 'actions' object. This 'actions' object holds the automatically generated action creator functions corresponding to each reducer defined in the todoSlice. Each reducer fucnton have action creator fucniton.
 
 //Action creators create an action object.
 

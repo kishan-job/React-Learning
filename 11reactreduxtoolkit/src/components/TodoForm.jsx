@@ -13,6 +13,7 @@ function TodoForm() {
         //   type: "todo/addTodo",
         //   payload: todoMsg
         // }
+        // we are dispatching this object to store then store send this object to respective reducer function in the slice.
         
         setTodoMsg(""); // Clear input after submission
       }}

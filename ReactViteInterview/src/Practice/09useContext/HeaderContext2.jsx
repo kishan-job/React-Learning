@@ -1,12 +1,12 @@
 import React from 'react'
-import HeaderContextChild from './HeaderContextChild2'
+import HeaderContextChild from './HeaderContextChild'
 
-function HeaderContext2() {
+function HeaderContext() {
   return (
     <div>
-      <HeaderContextChild2/>
+      <HeaderContextChild/>
     </div>
   )
 }
 
-export default HeaderContext2
+export default HeaderContext

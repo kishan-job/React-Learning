@@ -1,4 +1,6 @@
-import React, { useRef,useEffect } from "react";
+// ui selecting using useRef
+
+import React, { useRef, useEffect } from "react";
 
 function UseRef2() {
     const useRef2 = useRef();

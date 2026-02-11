@@ -1,6 +1,6 @@
 import React from "react";
 import HeaderContextChild from "./components/HeaderContextChild";
-import { AppContextProvider } from "./context/AppContext1";
+import { AppContextProvider } from "./context/AppContext";
 import HeaderContextChild2 from "./components/HeaderContextChild2";
 function App() {
   const num = 905;
