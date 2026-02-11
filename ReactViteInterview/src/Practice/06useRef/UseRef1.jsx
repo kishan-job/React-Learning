@@ -1,11 +1,10 @@
-<<<<<<< HEAD
+
 // The useRef Hook in React is a fundamental tool for managing references to DOM elements or to any mutable value that needs to persist across component re-renders without causing a re-render itself.
-=======
 // useRef is a React Hook that allows you to persist mutable values across renders without causing re-renders when the value changes. It's most commonly used for:
- * Accessing DOM elements directly: This is probably its most frequent use case. You can create a ref, attach it to a JSX element, and then access that element's properties or call its methods directly.
- * Storing mutable values that don't trigger re-renders: If you have a value that needs to change but its change shouldn't cause the component to re-render (e.g., a timer ID, a previous state value, or any instance variable), useRef is a good choice.
- * Integrating with third-party DOM libraries: When you need to interact with libraries that manipulate the DOM directly.
->>>>>>> 32d46e83170662ac6ca3cf6b7809fe27bc9dbaf7
+//  * Accessing DOM elements directly: This is probably its most frequent use case. You can create a ref, attach it to a JSX element, and then access that element's properties or call its methods directly.
+//  * Storing mutable values that don't trigger re-renders: If you have a value that needs to change but its change shouldn't cause the component to re-render (e.g., a timer ID, a previous state value, or any instance variable), useRef is a good choice.
+//  * Integrating with third-party DOM libraries: When you need to interact with libraries that manipulate the DOM directly.
+
 
 // ref.current → Used when storing non-DOM values (like numbers, objects, or functions). It allows accessing or modifying data without triggering re-renders.
 
