@@ -1,0 +1,29 @@
+What React Is Doing: The Two Phases
+React (Fiber) works in two major phases for updates:
+
+
+Render (Reconciliation) Phase
+
+Calls your component functions to produce virtual DOM (React elements).
+Refs are not attached yet. The DOM nodes do not exist yet.
+Pure calculation: React builds the “work-in-progress” tree to determine what changes are needed.
+If you access ref.current here, it is still null (initial render) and dereferencing throws.
+
+
+
+Commit Phase
+
+React takes the prepared work and applies changes to the real DOM.
+DOM nodes are created/updated/removed here.
+Refs are set here:
+
+By the end of the commit, for mounted elements, ref.current points to the DOM element.
+For unmounted/removed elements, ref.current is set back to null.
+
+
+Effects order:
+
+beforeMutation → mutation (DOM changes happen) → layout (then useLayoutEffect runs) → paint → passive effects (useEffect) run after paint.
+
+
+Practically: you can safely access ref.current inside event handlers and effects.
